@@ -7,6 +7,11 @@
     align-items: flex-start;
     padding: 4rem;
     justify-content: space-between;
+    @media screen and (min-width : 375px) and (max-width : 720px){
+        padding: 2rem;
+        justify-content: baseline;
+        gap: 1.2rem;
+    }
     &__type{
         &--text{
             font-family: $montserratFamily;
@@ -15,6 +20,9 @@
             font-weight: 500;
             color: $darkGrayBlue;
             letter-spacing: 5px;
+            @media screen and (min-width : 375px) and (max-width : 720px){
+                font-size: 1.2rem;
+            }
         }
     }
     &__title{
@@ -25,6 +33,10 @@
             color: $veryDarkBlue;
             margin-bottom: 1rem;
             line-height: 4.7rem;
+            @media screen and (min-width : 375px) and (max-width : 720px){
+                font-size: 3.7rem;
+                line-height: 4rem;
+            }
         }
     }
     &__description{
@@ -34,6 +46,10 @@
             font-weight: 500;
             color: $darkGrayBlue;
             line-height: 2.3rem;
+            @media screen and (min-width : 375px) and (max-width : 720px){
+                font-size: 1.4rem;
+                line-height: 2rem;
+            }
         }
     }
     &__price{
@@ -45,6 +61,9 @@
             font-size: 4rem;
             font-weight: 700;
             color: $darkCyan;
+            @media screen and (min-width : 375px) and (max-width : 720px){
+                font-size: 3rem;
+            }
         }
         .old-price{
             font-family: $montserratFamily;
@@ -52,6 +71,9 @@
             font-weight: 500;
             color: $darkGrayBlue;
             text-decoration: line-through;
+            @media screen and (min-width : 375px) and (max-width : 720px){
+                font-size: 1.4rem;
+            }
         }
     }
     &__button{
